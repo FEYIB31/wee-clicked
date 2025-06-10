@@ -1,4 +1,4 @@
-FROM nginx:1.13.7
+FROM nginx:stable
 
 # Copy custom nginx config
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf

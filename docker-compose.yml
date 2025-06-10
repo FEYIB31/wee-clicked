@@ -1,7 +1,6 @@
 # Run docker-compose build
 # Run docker-compose up
 # Comments represent alternate or optional configurations
-version: '2.1'
 
 services:
   frontend:
