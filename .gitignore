@@ -20,6 +20,7 @@ nginx/scripts/nohup*
 .mypy_cache
 build_logs.tar.gz
 
+
 # Mac custom attributes file (Desktop Service Store)
 .DS_Store
 backend/.DS_Store
