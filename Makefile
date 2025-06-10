@@ -55,7 +55,7 @@ backend-one-test:
 
 # postgresql login
 db-login:
-	psql -h localhost -p 5432 -U postgres -W
+	psql -h localhost -p 5433 -U postgres -W
 
 # Other DB commands-
 # exit: \q

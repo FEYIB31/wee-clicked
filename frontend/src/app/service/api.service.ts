@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 import { environment } from '../../environments/environment';
@@ -44,7 +44,7 @@ export class ApiService {
 
   private handleError(error: HttpErrorResponse | any) {
     console.error('ApiService::handleError', error);
-    return Observable.throw(error.message || 'server error.');
+    return throwError(() => new Error(error.message || 'server error.'));
   }
 
 }

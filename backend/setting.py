@@ -19,7 +19,7 @@ class Config(object):
     DB_USER = os.getenv('POSTGRES_USER') or 'postgres'
     DB_PASS = os.getenv('POSTGRES_PASSWORD') or 'postgres'
     DB_SERVICE = os.getenv('DB_SERVICE') or 'localhost'
-    DB_PORT = os.getenv('DB_PORT') or 5432
+    DB_PORT = os.getenv('DB_PORT') or 5433
     BROKER_URL = os.getenv('BROKER_URL') or 'redis://localhost:6379/0'
     CELERY_BACKEND = os.getenv('CELERY_BACKEND') or 'postgresql://postgres:postgres@localhost:5432/blogs_db'
     SQLALCHEMY_DATABASE_URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(DB_USER, DB_PASS, DB_SERVICE, DB_PORT, DB_NAME)

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  api: {\n    base: 'http://localhost:5001/api',\n    entries: 'blogs'\n  }\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

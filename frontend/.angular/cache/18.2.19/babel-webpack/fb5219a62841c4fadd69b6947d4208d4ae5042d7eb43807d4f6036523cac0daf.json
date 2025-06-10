@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Blog {\n  title;\n  description;\n  id;\n  created_date;\n  // convert json values into object\n  constructor(values = {}) {\n    Object.assign(this, values);\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,6 +1,6 @@
 #FROM Ubuntu
 #FROM python:alpine3.7
-FROM python:3.7
+FROM python:3.10
 
 ENV PYTHONUNBUFFERED 1
 
@@ -28,6 +28,6 @@ COPY . /backend
 # Install the Python libraries
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 5001
 
 CMD FLASK_APP=/backend/run.py flask run --host 0.0.0.0
