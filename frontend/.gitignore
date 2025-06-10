@@ -51,4 +51,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
+frontend/.angular/cache/
 
+frontend/.angular/cache/
